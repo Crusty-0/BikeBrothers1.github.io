@@ -44,7 +44,7 @@
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
 
-            emailjs.sendForm('service_dk62g52', 'template_rq3ukyu', this)
+            emailjs.sendForm('service_dk62g52', 'template_0c2ea9f', this)
                 .then(function() {
                     document.getElementById('status').innerText = 'Message sent successfully!';
                 }, function(error) {
