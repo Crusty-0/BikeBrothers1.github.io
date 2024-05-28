@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+#<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,11 +6,6 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="contact.css">
     <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init('_UDFiJjFLbcWXxQxO'); // Replace 'YOUR_USER_ID' with your EmailJS User ID
-        })();
-    </script>
 </head>
 <body>
     <header>
@@ -37,20 +32,9 @@
         <div id="status"></div>
     </main>
     <footer>
-        <p>&copy; 2024 My Simple Website</p>
+        <p>&copy; 2024 Bike Brothers</p>
     </footer>
 
-    <script type="text/javascript">
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            emailjs.sendForm('service_dk62g52', 'template_0c2ea9f', this)
-                .then(function() {
-                    document.getElementById('status').innerText = 'Message sent successfully!';
-                }, function(error) {
-                    document.getElementById('status').innerText = 'Failed to send message. Error: ' + JSON.stringify(error);
-                });
-        });
-    </script>
+    <script src="contact.js"></script>
 </body>
 </html>
